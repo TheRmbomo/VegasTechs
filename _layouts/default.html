@@ -11,15 +11,15 @@
         <meta name="theme-color" content="#157878">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-        <link rel="icon" sizes="32x32" href="/image/favicon.png"/>
+        <link rel="icon" sizes="32x32" href="{{ site.baseurl }}/image/favicon.png"/>
     
         <!-- CSS Files -->
-        <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="{{ site.baseurl | append '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/index.css">
         {% if page.stylesheet %}
-        <link rel="stylesheet" href="/css/{{ page.stylesheet }}.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.stylesheet }}.css">
         {% endif %}
-        <!-- <link rel="stylesheet" href="/header.css"> -->
+        <!-- <link rel="stylesheet" href="{{ site.baseurl }}/header.css"> -->
 
         <!-- Google Fonts (Optimized) -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,11 +35,11 @@
         </noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-        <link rel="preload" as="image" href="/image/banner.webp">
+        <link rel="preload" as="image" href="{{ site.baseurl }}/image/banner.webp">
         <!-- JavaScript (Optimized) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
-        <script src="/owl.js" defer></script>
+        <!-- <script src="{{ site.baseurl }}/owl.js" defer></script> -->
         <style>
         header {position:absolute;z-index:9999;width:100%;padding-top:20px;background:0 0}
         header .container{display:flex;align-items:center;justify-content:space-between}
@@ -75,7 +75,7 @@
         <header class="{% if page.alt-header %}alt{% endif %}">
             <div class="container header-menus d-flex">
                 <div class="logo">
-                    <a href="/" aria-label="home page"><img src="/image/vegastech logo.svg" alt="Logo"></a>
+                    <a href="{{ site.baseurl }}" aria-label="home page"><img src="{{ site.baseurl }}/image/vegastech logo.svg" alt="Logo"></a>
                 </div>
 
                 <!-- Hamburger Menu -->
@@ -94,16 +94,16 @@
 
                 <nav class="main-nav d-flex">
                     <ul class="d-flex">
-                        <li><a href="/services" aria-label="Services page">Services</a></li>
-                        <li><a href="/about-us" aria-label="About us page">About Us</a></li>
-                        <li><a href="/clients" aria-label="Clients page">Clients</a></li>
-                        <li><a href="/careers" aria-label="Careers page">Careers</a></li>
-                        <li><a href="/contact-us" aria-label="Contact us page">Contact Us</a></li>
+                        <li><a href="{{ site.baseurl }}/services" aria-label="Services page">Services</a></li>
+                        <li><a href="{{ site.baseurl }}/about-us" aria-label="About us page">About Us</a></li>
+                        <li><a href="{{ site.baseurl }}/clients" aria-label="Clients page">Clients</a></li>
+                        <li><a href="{{ site.baseurl }}/careers" aria-label="Careers page">Careers</a></li>
+                        <li><a href="{{ site.baseurl }}/contact-us" aria-label="Contact us page">Contact Us</a></li>
                     </ul>
                 </nav>
 
                 <div class="button-block">
-                    <a class="btn" href="/contact-us" aria-label="Contact us">Let's Connect</a>
+                    <a class="btn" href="{{ site.baseurl }}/contact-us" aria-label="Contact us">Let's Connect</a>
                 </div>
             </div>
         </header>
@@ -116,14 +116,14 @@
             <div class="container">
                 <div class="d-flex">
                     <div class="footer-logo">
-                        <a href="/" aria-label="home page"><img src="/image/vegastech logo.svg" alt="Logo"></a>
+                        <a href="{{ site.baseurl }}" aria-label="home page"><img src="{{ site.baseurl }}/image/vegastech logo.svg" alt="Logo"></a>
                     </div>
                     <nav class="main-nav d-flex">
                         <ul class="d-flex">
-                            <li><a href="/" aria-label="Home page">Home</a></li>
-                            <li><a href="/about-us" aria-label="About us page">About Us</a></li>
-                            <li><a href="/services" aria-label="Services page">Services</a></li>
-                            <li><a href="/contact-us" aria-label="Contact us page">Contact Us</a></li>
+                            <li><a href="{{ site.baseurl }}" aria-label="Home page">Home</a></li>
+                            <li><a href="{{ site.baseurl }}/about-us" aria-label="About us page">About Us</a></li>
+                            <li><a href="{{ site.baseurl }}/services" aria-label="Services page">Services</a></li>
+                            <li><a href="{{ site.baseurl }}/contact-us" aria-label="Contact us page">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -135,9 +135,9 @@
                         </div>
                         <div class="social">
                             <ul class="d-flex">
-                                <li><a href="#" aria-label="facebook"><img src="/image/facebook.svg" alt="facebook"></a></li>
-                                <li><a href="#" aria-label="instagram"><img src="/image/instagram.svg" alt="instagram"></a></li>
-                                <li><a href="#" aria-label="twitter"><img src="/image/twitter.svg" alt="twitter"></a></li>
+                                <li><a href="#" aria-label="facebook"><img src="{{ site.baseurl }}/image/facebook.svg" alt="facebook"></a></li>
+                                <li><a href="#" aria-label="instagram"><img src="{{ site.baseurl }}/image/instagram.svg" alt="instagram"></a></li>
+                                <li><a href="#" aria-label="twitter"><img src="{{ site.baseurl }}/image/twitter.svg" alt="twitter"></a></li>
                             </ul>
                         </div>
                     </div>
