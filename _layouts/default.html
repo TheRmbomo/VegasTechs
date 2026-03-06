@@ -14,7 +14,7 @@
         <link rel="icon" sizes="32x32" href="{{ site.baseurl }}/image/favicon.png"/>
     
         <!-- CSS Files -->
-        <link rel="stylesheet" href="{{ site.baseurl | append '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        <link rel="stylesheet" href="{{ site.baseurl | append: '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/index.css">
         {% if page.stylesheet %}
         <link rel="stylesheet" href="{{ site.baseurl }}/css/{{ page.stylesheet }}.css">
